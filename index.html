@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dunkin'Donuts Website Landing Page</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="../images/img1d.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img class="logo" src="../images/Logo-Dunkin-Donuts.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>No son solo Donas <br>Son <span>Dunkin'Donuts</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo architecto esse, nam quas enim corporis dolorem ipsum?</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div class="imgBox">
+                    <img src="../images/img1d.png" class="dunkin">
+                </div>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="../images/thumb1d.png" onclick="imgSlider('../images/img1d.png');changeCircleColor('#FF1493')"></li>
+            <li><img src="../images/thumb2d.png" onclick="imgSlider('../images/img2d.png');changeCircleColor('#bacdd0')"></li>
+            <li><img src="../images/thumb3d.png" onclick="imgSlider('../images/img3d.png');changeCircleColor('#d78091')"></li>
+            <li><img src="../images/caja.png" onclick="imgSlider('../images/caja.png');changeCircleColor('#ba5361')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../images/facebook.png"></a></li>
+            <li><a href="#"><img src="../images/twitter.png"></a></li>
+            <li><a href="#"><img src="../images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.dunkin').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
